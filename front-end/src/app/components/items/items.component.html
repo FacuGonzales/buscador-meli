@@ -1,0 +1,46 @@
+<app-inicio></app-inicio>
+
+<section>
+    <div class="noResult-container" *ngIf="esVacio">
+        <div class="imagen">
+            <img src="./../../../assets/lupa.png" alt="">
+        </div>
+            
+        <div class="mensaje">
+            <h2>No hay publicaciones que coincidan con tu búsqueda.</h2>
+            <br>
+            <div class="listaDeSugerencias">
+                <ul>
+                    <li>Revisá la ortografía de la palabra.</li>
+                    <li>Utilizá palabras más genéricas o menos palabras.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="listado-container" *ngIf="listadoProductos.length > 0 && !esVacio">
+
+        <div class="contenedorPorProducto" *ngFor="let item of listadoProductos" (click)="verDetalle(item.id)">
+
+            <div class="imagenProducto">
+                <img src="{{item.img}}" >
+            </div>
+
+            <div class="infoProducto">
+                <h3 class="price">$ {{item.price}}
+                    <picture *ngIf="item.free_shipping == true">
+                        <source srcset="../../../assets/ic_shipping.png">
+                        <img src="../../../assets/ic_shipping.png" alt="Search">
+                    </picture>   
+                </h3>
+
+                <div class="extra">               
+                    <p class="title">{{item.title}}</p>
+    
+                    <p class="state">{{item.state_name}}</p>
+                </div>    
+            </div>
+        </div>
+
+    </div>
+</section>

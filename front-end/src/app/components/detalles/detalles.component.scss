@@ -1,0 +1,70 @@
+
+.detalles-container{
+    margin : 0 auto;
+    width: 65%;
+    background-color: white;
+}
+
+.info-container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    
+}
+
+.imagenProducto{
+    text-align: center;
+}
+
+.infoProducto{
+    padding-top: 10%;
+    line-height: 1.8;
+    
+}
+
+.infoProducto > h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.4;
+
+
+}
+
+.extra{
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    text-align: justify;
+}
+
+.descripcion-container{
+    padding-left: 5%;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .info-container{
+        display: grid;
+        grid-template-columns: 100%;
+        
+    }
+
+    .extra{
+        padding-top: 10%;
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: justify;
+    }
+    .descripcion-container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .infoProducto {
+
+        padding-left: 5%;
+        padding-right: 5%;
+    
+    }
+
+}

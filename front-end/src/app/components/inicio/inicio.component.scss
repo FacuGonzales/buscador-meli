@@ -1,0 +1,49 @@
+
+header {
+  background-color: #ffe600 !important;
+  height: 10vh;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-gap: 15px;
+  height: 10vh;
+  align-content: center;
+}
+
+.logo-container {
+  text-align: right;
+}
+
+.form-container > form > button {
+ 
+  width: 40px;
+  margin-left: 0px;
+  padding-top: 6px;
+  padding-bottom: 9px;
+  margin-top: 1px;
+}
+
+.form-container form button picture img {
+  margin-bottom: -5px;
+}
+
+header nav a {
+  padding-top: 10px;
+}
+
+header nav form {
+  width: 90%;
+}
+
+header nav form input {
+  width: 75%;
+  padding: 7px 10px 9px 15px;
+}
+
+@media (min-width: 1023px) {
+  header nav form {
+    width: 100%;
+  }
+}

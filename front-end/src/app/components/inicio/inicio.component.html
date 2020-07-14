@@ -1,0 +1,32 @@
+<header>
+    <nav>
+        <div class="logo-container">
+            <a>
+                <picture>
+                    <source srcset="./assets/Logo_ML.png" media="(max-width: 1023px)">
+                    <img src="./assets/Logo_ML.png" alt="ML logo">
+                </picture>
+            </a>
+        </div>
+
+        <div class="form-container">
+            <form [formGroup]="searchForm" (ngSubmit)="searchItems()">
+
+                <input type="text" class="nav-search-input" aria-label="Nunca dejes de buscar"
+                    id="buscador" name="as_word" placeholder="Nunca dejes de buscar" maxlength="120" autofocus=""
+                    autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off" tabindex="2"
+                    formControlName="nameItem">
+              
+                <button type="submit"  id="botonBuscador" class="nav-search-btn" tabindex="3">
+                    <picture>
+                        <source srcset="./assets/ic_Search.png">
+                        <img src="./assets/ic_Search.png" alt="Search">
+                    </picture>   
+                </button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+
+

@@ -1,0 +1,35 @@
+<app-inicio></app-inicio>
+
+<section>
+    <div class="detalles-container">
+        
+        <div class="info-container">
+            <div class="imagenProducto">
+                <img src="{{ producto.img }}">
+            </div>
+
+            <div class="infoProducto">
+
+                <p>{{ producto.item_condicion }}</p>
+
+                <h2 class="title">{{producto.title}}</h2>
+
+                <h4>$ {{producto.price}}</h4>
+
+                <button type="button" class="btn btn-primary btn-lg">Comprar</button>
+            </div>
+
+        </div>
+
+        <div class="extra">
+            <div class="descripcion-container">
+                <h4>Descripción del producto</h4>
+    
+                <p>{{producto.description}}</p>
+            </div>
+        </div>
+        
+        <div></div>
+        
+    </div>
+</section>
