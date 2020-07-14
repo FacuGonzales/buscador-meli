@@ -1,0 +1,2 @@
+"# buscador-meli"  
+En este proyecto podemos encontrar un prototipo del buscador de Mercado Libre, donde podemos buscar productos, ver sus precios, ver si dispone de envío, y más. El mismo se encuentra desarrollado en Angular para el front-end. Y para el back-end se utilizo Nodejs y Express
